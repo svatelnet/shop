@@ -1,0 +1,4 @@
+127.0.0.1 - - [01/Aug/2021:18:02:47 +0300] "GET /robots.txt HTTP/1.1" 404 266005 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"
+127.0.0.1 - - [01/Aug/2021:18:02:48 +0300] "GET / HTTP/1.1" 404 83715 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"
+127.0.0.1 - - [01/Aug/2021:18:02:48 +0300] "GET /_wdt/8d0c5e HTTP/1.1" 200 15623 "http://shop/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"
+127.0.0.1 - - [01/Aug/2021:18:02:49 +0300] "GET /favicon.ico HTTP/1.1" 404 266238 "http://shop/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"
