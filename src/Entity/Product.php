@@ -33,6 +33,16 @@ class Product
      */
     private $price;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $name;
+
+    public function __toString(): string
+    {
+        return (string) $this->getCategory();
+    }
+
     public function getId(): ?int
     {
         return $this->id;
@@ -70,6 +80,18 @@ class Product
     public function setPrice(int $price): self
     {
         $this->price = $price;
+
+        return $this;
+    }
+
+    public function getName(): ?string
+    {
+        return $this->name;
+    }
+
+    public function setName(string $name): self
+    {
+        $this->name = $name;
 
         return $this;
     }
