@@ -1,0 +1,15 @@
+form:
+    label:
+        delete: Удалить
+
+product:
+    category: Категория товара
+    name: Название товара
+    price: Стоимость товара
+    description: Описание товара
+    thumbnail: Изображение товара
+
+category:
+    name: Название категории
+
+

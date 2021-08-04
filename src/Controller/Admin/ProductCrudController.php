@@ -30,12 +30,12 @@ class ProductCrudController extends AbstractCrudController
 //            TextField::new('title'),
 //            TextEditorField::new('description'),
 //        ];
-        yield AssociationField::new('category');
-        yield TextField::new('name');
-        yield IntegerField::new('price');
-        yield TextField::new('description');
+        yield AssociationField::new('category', 'product.category');
+        yield TextField::new('name', 'product.name');
+        yield IntegerField::new('price', 'product.price');
+        yield TextEditorField::new('description', 'product.description');
         yield VichImageField::new('thumbnailFile')->onlyOnForms();
-        yield ImageField::new('thumbnail')->hideOnForm()->setBasePath('/uploads/files');
+        yield ImageField::new('thumbnail', 'product.thumbnail')->hideOnForm()->setBasePath('/uploads/files');
     }
 
 }
