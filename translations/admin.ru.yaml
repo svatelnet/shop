@@ -12,4 +12,6 @@ product:
 category:
     name: Название категории
 
-
+menu:
+    name: Название пункта меню
+    link: Ссылка
