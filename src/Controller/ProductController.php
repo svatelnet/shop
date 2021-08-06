@@ -14,9 +14,19 @@ use Symfony\Component\Routing\Annotation\Route;
 class ProductController extends AbstractController
 {
     /**
-     * @Route("/", name="product_index", methods={"GET"})
+     * @Route("/", name="home", methods={"GET"})
      */
     public function index(ProductRepository $productRepository): Response
+    {
+        return $this->render('base.html.twig', [
+            'products' => $productRepository->findAll(),
+        ]);
+    }
+
+    /**
+     * @Route("/test", name="test", methods={"GET"})
+     */
+    public function index1(ProductRepository $productRepository): Response
     {
         return $this->render('base.html.twig', [
             'products' => $productRepository->findAll(),
@@ -32,4 +42,15 @@ class ProductController extends AbstractController
             'product' => $product,
         ]);
     }
+
+//    /**
+//     * @Route("/test", name="product_index", methods={"GET"})
+//     */
+//    public function index1(ProductRepository $productRepository): Response
+//    {
+//        return $this->render('base.html.twig', [
+//            'products' => $productRepository->findAll(),
+//        ]);
+//    }
+
 }
